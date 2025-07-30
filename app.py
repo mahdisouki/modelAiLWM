@@ -47,7 +47,7 @@ def predict():
     model = YOLO('./model/best.pt')
 
     # Perform inference
-    results = model.predict(source="image.jpg",conf=0.35, save=True,iou=0.4, device='cpu')
+    results = model.predict(source="image.jpg",conf=0.45, save=True,iou=0.4, device='cpu')
 
     # Access detection results
     for result in results:
